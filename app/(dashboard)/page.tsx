@@ -17,7 +17,7 @@ interface DashboardPageProps {
 const DashboardPage = ({searchParams}: DashboardPageProps) => {
     const {organization} = useOrganization();
     return (
-        <div className="flex-1 h-[calc(100%-80px)] p-6 bg-slate-500">
+        <div className="flex-1 h-[calc(100%-80px)] p-6">
            {/* <EmptyOrg/> */}
 
            <BoardList orgId={organization?.id} query={searchParams}/>
